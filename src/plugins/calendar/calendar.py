@@ -81,7 +81,7 @@ class Calendar(BasePlugin):
             for event in events:
                 start, end, all_day = self.parse_data_points(event, tz)
                 parsed_event = {
-                    "title": str(event.get("summary")).replace("\\n", " ").strip(),
+                    "title": str(event.get("summary")).replace("\n", " ").strip(),
                     "start": start,
                     "backgroundColor": color,
                     "textColor": contrast_color,
