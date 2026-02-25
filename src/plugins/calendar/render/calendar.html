@@ -26,7 +26,7 @@
         const timeFormat = {
             hour: "numeric",
             minute: "2-digit",
-            omitZeroMinute: {{ (time_format == "12h") | tojson }},
+            omitZeroMinute: false,
             hour12: {{ (time_format == "12h") | tojson }},
             meridiem: 'short'
         };
@@ -38,7 +38,7 @@
             timeZone: '{{ timezone }}',
             contentHeight: '100%',
             slotDuration: '01:00:00',
-            expandRows: true,
+            expandRows: false,
             locale: "{{ plugin_settings.language or 'en' }}",
             firstDay: "{{ plugin_settings.weekStartDay or 0}}",
             slotLabelFormat: timeFormat,
