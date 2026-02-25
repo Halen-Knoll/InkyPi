@@ -45,6 +45,7 @@
             slotMinTime: "{{ plugin_settings.startTimeInterval or 00}}:00:00",
             slotMaxTime: "{{ plugin_settings.endTimeInterval or 24}}:00:00",
             eventTimeFormat: timeFormat,
+            displayEventEnd: true,
             displayEventTime: {{ (plugin_settings.displayEventTime == "true") | tojson}},
             weekends:  {{ (plugin_settings.displayWeekends == "true") | tojson}},
             nowIndicator: {{ (plugin_settings.displayNowIndicator == "true") | tojson}},
