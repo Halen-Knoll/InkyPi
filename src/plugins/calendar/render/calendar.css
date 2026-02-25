@@ -105,7 +105,8 @@ th {
   height: 16px !important;
   border-radius: 50% !important;
   border-width: 0px !important;
-  background-color: var(--fc-event-bg-color);
+  border-color: var(--fc-event-bg-color) !important;
+  background-color: var(--fc-event-bg-color) !important;
 }
 
 .fc .fc-daygrid-dot-event .fc-event-time {
