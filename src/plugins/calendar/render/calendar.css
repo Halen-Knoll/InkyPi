@@ -101,12 +101,10 @@ th {
 }
 
 .fc .fc-daygrid-event-dot {
-  width: 16px !important;
-  height: 16px !important;
+  width: 0px !important;
+  height: 0ppx !important;
   border-radius: 50% !important;
-  border-width: 0px !important;
-  border-color: var(--fc-event-bg-color) !important;
-  background-color: var(--fc-event-bg-color) !important;
+  border-width: 10px !important;
 }
 
 .fc .fc-daygrid-dot-event .fc-event-time {
@@ -125,14 +123,12 @@ th {
 
 .fc .fc-h-event {
   background-color: transparent !important;
-  border-width: 2px;
-  border-color: var(--fc-event-bg-color) !important;
+  border-width: 2px !important;
+  border-style: solid !important;
+  margin-bottom: 10px !important;
 }
 
 .fc .fc-h-event .fc-event-main {
   color: black !important;
-  margin-left: 5px;
-  margin-top: 2px;
-  margin-bottom: 2px;
-  margin-right: 5px;
+  margin: 2px 5px;
 }

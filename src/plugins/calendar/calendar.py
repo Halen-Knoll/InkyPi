@@ -83,6 +83,7 @@ class Calendar(BasePlugin):
                 parsed_event = {
                     "title": str(event.get("summary")).replace("\n", " ").strip(),
                     "start": start,
+                    "borderColor": color,
                     "backgroundColor": color,
                     "textColor": contrast_color,
                     "allDay": all_day
